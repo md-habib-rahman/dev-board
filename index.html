@@ -10,7 +10,7 @@
 	<title>Dev Board</title>
 </head>
 
-<body class="body-bg text-color p-4 font-poppins h-screen">
+<body id="body" class="body-bg text-color p-4 font-poppins h-screen">
 	<section class="w-7xl mx-auto bg-white p-4 rounded-xl">
 		<nav class="flex items-center justify-between">
 			<div class="flex items-center gap-4">
@@ -20,11 +20,14 @@
 			<div class="flex gap-8">
 				<div class="flex items-center gap-2 body-bg rounded-full px-4">
 					<img class="max-w-5" src="./assets/checkbox.png" alt="">
-					<h2 class="font-bold text-2xl">23</h2>
+					<h2 id="performed-task" class="font-bold text-2xl">23</h2>
 				</div>
-				<div class="body-bg rounded-full p-2">
+
+				<button id="rainbow-button" class="body-bg rounded-full p-2 btn border-0">
 					<img class="max-w-7" src="./assets/theme-btn.png" alt="">
-				</div>
+				</button>
+
+
 			</div>
 
 		</nav>
@@ -53,7 +56,7 @@
 						</div>
 
 						<div>
-							<p id="day-name">Wed</p>
+							<!-- <p id="day-name">Wed</p> -->
 							<p id="date" class="font-bold">Today's Date</p>
 						</div>
 
@@ -64,8 +67,8 @@
 					<div class="card body-bg  p-4">
 						<div class="flex flex-col gap-4 items-start">
 							<p class="text-xs bg-white rounded-lg p-2 inline-flex">shopEase</p>
-							<h4 class="text-xl font-medium">Fix Mobile Button Issue </h4>
-							<p class="rounded-lg text-sm line-clamp-2 bg-white p-2 w-full">Debug using
+							<h4 class="text-xl font-medium card-title">Fix Mobile Button Issue </h4>
+							<p class="rounded-lg text-xs line-clamp-2 bg-white p-2 w-full">Debug using
 								Chrome DevTools, check for overlapping elements, and ensure onClick works properly.</p>
 							<!-- ebug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly -->
 						</div>
@@ -82,7 +85,7 @@
 					<div class="card body-bg  p-4">
 						<div class="flex flex-col gap-4 items-start">
 							<p class="text-xs bg-white rounded-lg p-2 inline-flex">CloudSync</p>
-							<h4 class="text-xl font-medium">Add Dark Mode </h4>
+							<h4 class="text-xl font-medium card-title">Add Dark Mode </h4>
 							<p class="rounded-lg text-sm line-clamp-2 bg-white p-2 w-full">Store the user's preference
 								in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
 							</p>
@@ -94,14 +97,14 @@
 								<p class="text-xs">Deadline</p>
 								<p class="text-sm font-bold">21 March 2025</p>
 							</div>
-							<div><button class="btn btn-primary text-sm">Completed</button></div>
+							<div><button class="btn btn-primary text-sm card-complete">Completed</button></div>
 						</div>
 
 					</div>
 					<div class="card body-bg  p-4">
 						<div class="flex flex-col gap-4 items-start">
 							<p class="text-xs bg-white rounded-lg p-2 inline-flex">SwiftPay</p>
-							<h4 class="text-xl font-medium">Optimize Home page</h4>
+							<h4 class="text-xl font-medium card-title">Optimize Home page</h4>
 							<p class="rounded-lg text-sm line-clamp-2 bg-white p-2 w-full">Debug using Chrome
 								DevTools, check for overlapping elements, and ensure onClick works properly
 								and ensure onClick works properly</p>
@@ -113,14 +116,14 @@
 								<p class="text-xs">Deadline</p>
 								<p class="text-sm font-bold">21 March 2025</p>
 							</div>
-							<div><button class="btn btn-primary text-sm">Completed</button></div>
+							<div><button class="btn btn-primary text-sm card-complete">Completed</button></div>
 						</div>
 
 					</div>
 					<div class="card body-bg  p-4">
 						<div class="flex flex-col gap-4 items-start">
 							<p class="text-xs bg-white rounded-lg p-2 inline-flex">Meta</p>
-							<h4 class="text-xl font-medium">Add new emoji 🤲 </h4>
+							<h4 class="text-xl font-medium card-title">Add new emoji 🤲 </h4>
 							<p class="rounded-lg text-sm line-clamp-2 bg-white p-2 w-full">Debug using
 								Chrome DevTools, check for overlapping elements, and ensure onClick works properly.</p>
 							<!-- ebug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly -->
@@ -131,14 +134,14 @@
 								<p class="text-xs">Deadline</p>
 								<p class="text-sm font-bold">21 March 2025</p>
 							</div>
-							<div><button class="btn btn-primary text-sm">Completed</button></div>
+							<div><button class="btn btn-primary text-sm card-complete">Completed</button></div>
 						</div>
 
 					</div>
 					<div class="card body-bg  p-4">
 						<div class="flex flex-col gap-4 items-start">
 							<p class="text-xs bg-white rounded-lg p-2 inline-flex">Google LLC</p>
-							<h4 class="text-xl font-medium">Integrate OpenAI API</h4>
+							<h4 class="text-xl font-medium card-title">Integrate OpenAI API</h4>
 							<p class="rounded-lg text-sm line-clamp-2 bg-white p-2 w-full">Debug using
 								Chrome DevTools, check for overlapping elements, and ensure onClick works properly.</p>
 							<!-- ebug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly -->
@@ -149,14 +152,14 @@
 								<p class="text-xs">Deadline</p>
 								<p class="text-sm font-bold">21 March 2025</p>
 							</div>
-							<div><button class="btn btn-primary text-sm">Completed</button></div>
+							<div><button class="btn btn-primary text-sm card-complete">Completed</button></div>
 						</div>
 
 					</div>
 					<div class="card body-bg  p-4">
 						<div class="flex flex-col gap-4 items-start">
 							<p class="text-xs bg-white rounded-lg p-2 inline-flex">Glassdoar</p>
-							<h4 class="text-xl font-medium">Improve Job searching</h4>
+							<h4 class="text-xl font-medium card-title">Improve Job searching</h4>
 							<p class="rounded-lg text-sm line-clamp-2 bg-white p-2 w-full">Debug using
 								Chrome DevTools, check for overlapping elements, and ensure onClick works properly.</p>
 							<!-- ebug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly -->
@@ -167,7 +170,7 @@
 								<p class="text-xs">Deadline</p>
 								<p class="text-sm font-bold">21 March 2025</p>
 							</div>
-							<div><button class="btn btn-primary text-sm">Completed</button></div>
+							<div><button class="btn btn-primary text-sm card-complete">Completed</button></div>
 						</div>
 
 					</div>
@@ -186,11 +189,13 @@
 
 				</div>
 				<hr class="line my-4">
-				<div id="user-activity"></div>
+				<div id="user-activity-list" class="px-4">
+					<!-- <p class="body-bg rounded-xl p-2 text-sm">You have completed the task Fix Mobile Button Issue at 11:45:48 AM</p> -->
+				</div>
 			</div>
 		</main>
 	</section>
-
+	<script src="./script/index.js"></script>
 </body>
 
 </html>
