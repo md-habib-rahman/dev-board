@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<link rel="stylesheet" href="./styles/style.css">
+	<title>Blog</title>
+</head>
+
+<body id="body" class="body-bg text-color p-4 font-poppins h-screen">
+	<section class="w-7xl mx-auto bg-white p-4 rounded-xl">
+		<nav class="flex items-center justify-between">
+			<div class="flex items-center gap-4">
+				<img src="./assets/logo.png" alt="">
+				<h2 class="text-3xl">Dev<span class="font-bold">Board</span></h2>
+			</div>
+			<div class="flex gap-8">
+				<button id="btn-link-home" class="btn btn-primary">Back to Desk</button>
+			</div>
+
+		</nav>
+
+	</section>
+	<div class="text-center my-4">
+		<h1 class="text-4xl font-bold">Blogs</h1>
+	</div>
+	<section>
+		<div class="w-7xl mx-auto bg-white p-4 rounded-xl mb-4">
+			<h4 class="font-bold text-base">Question-1: What are the different ways to select an element in the DOM?
+			</h4>
+			<hr class="line my-2">
+			<p class="text-sm">Below are the method to select element in the DOM</p>
+			<ol class="list-decimal ml-8 text-sm">
+				<li>document.getElementById</li>
+				<li>document.getElementsByClassName</li>
+				<li>document.getElementsByTagName</li>
+				<li>document.querySelector</li>
+				<li>document.querySelectorAll</li>
+			</ol>
+
+		</div>
+		<div class="w-7xl mx-auto bg-white p-4 rounded-xl mb-4">
+			<h4 class="font-bold text-base">Question-2: What is the difference between innerHTML, innerText, and
+				textContent ?</h4>
+			<hr class="line my-2">
+			<p class="text-sm">Difference between innerHTML, innerText and textContent is given below</p>
+			<ol class="list-disc ml-8 text-sm">
+				<li>innerHTML: It gets all the element including markup inside the selected element.</li>
+				<li>innerText: It gets only the text content which will appear on the screen.</li>
+				<li>textContent: It gets all the text content which are available inside the selected element including
+					the hidden element.</li>
+			</ol>
+
+		</div>
+		<div class="w-7xl mx-auto bg-white p-4 rounded-xl mb-4">
+			<h4 class="font-bold text-base">Question-3: What is event delegation in the DOM?</h4>
+			<hr class="line my-2">
+			<p class="text-sm">By using event delegation we can handle events triggered on the child elements from the
+				same event
+				listener used in the parent element.</p>
+
+		</div>
+
+		<div class="w-7xl mx-auto bg-white p-4 rounded-xl mb-4">
+			<h4 class="font-bold text-base">Question-4: What is event bubbling in the DOM?</h4>
+			<hr class="line my-2">
+			<p class="text-sm">Event triggered in any child element can drive to the upper elements towards the dom tree
+				and can respond to the event attached to any parent element is called <b>Event Bubbling</b>.</p>
+
+		</div>
+		<div class="w-7xl mx-auto bg-white p-4 rounded-xl mb-4">
+			<h4 class="font-bold text-base">Question-5: How do you create, add, and remove elements using JavaScript?
+			</h4>
+			<hr class="line my-2">
+			<p class="text-sm">Create element:<br>
+				<span class="ml-8">document.createElement("p");</span><br>
+
+				Add Element to Parent<br>
+				<span class="ml-8 ">document.createElement("p");</span><br>
+				Remove Element <br>
+				<span class="ml-8">document.getElementById("id_of_the_element").remove();</span>
+
+			</p>
+
+		</div>
+
+	</section>
+	<script>
+		document.getElementById("btn-link-home").addEventListener("click", function () {
+			window.location.href = "index.html";
+		})
+	</script>
+</body>
+
+</html>
